@@ -17,7 +17,7 @@ public class Array1 {
         reverseArray(arr, 0, arr.length-1);
 
         //printing the reversed array
-        System.err.println("Reversed array is");
+        System.out.println("Reversed array is");
         printArray(arr, arr.length);
     }
 
