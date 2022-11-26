@@ -3,7 +3,7 @@
 public class MaxArray {
     
     public static void main(String[] args) {
-        int[] arr = {0,1,1};
+        int[] arr = {10,23,52,64,56,89,45,6};
         int arr_size = arr.length;
         int min, max;
         int i; //for loop
