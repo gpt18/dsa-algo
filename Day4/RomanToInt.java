@@ -26,7 +26,7 @@ public class RomanToInt{
         int num = map.get(s.charAt(size-1));
 
         for(int i = size-2; i >= 0; i--){
-            if(map.get(s.charAt(i)) > map.get(s.charAt(i+1)) ){
+            if(map.get(s.charAt(i)) >= map.get(s.charAt(i+1)) ){
                 num += map.get(s.charAt(i));
             }else{
                 num -= map.get(s.charAt(i));
@@ -41,7 +41,7 @@ public class RomanToInt{
        
         Scanner in =  new Scanner(System.in);
 
-        System.out.print("Roman numerals symbols: \nI, V, X, L, C, D and M.\nEnter Roman Number: ");
+        System.out.print("Roman numerals symbols: I, V, X, L, C, D and M.\nEnter Roman Number: ");
         String s = in.nextLine();
 
         int num = romanToInt(s);
